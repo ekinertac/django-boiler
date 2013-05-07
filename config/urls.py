@@ -17,7 +17,7 @@ def easy(url_str):
 
 urlpatterns = patterns('',
     url(r'^$', 'config.views.index', name='index'),
-    # url(r'^project/', include('project.foo.urls')),
+    # url(easy('^project/:id/'), 'project.foo.view_name'),
 
     url(r'^admin/', include(admin.site.urls)),
 )
